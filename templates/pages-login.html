@@ -1,0 +1,112 @@
+{% load static %}
+{%load crispy_forms_tags%}
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <meta charset="utf-8" />
+        <title>Scholarship Assistant | Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="">
+
+        <!-- Bootstrap select pluings -->
+        <link href="{% static 'assets/libs/bootstrap-select/bootstrap-select.min.css' %}" rel="stylesheet" type="text/css" />
+
+        <!-- App css -->
+        <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+        <link href="{% static 'assets/css/icons.min.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/css/app.min.css' %}" rel="stylesheet" type="text/css"  id="app-stylesheet" />
+
+    </head>
+
+    <body class="authentication-bg">
+        <div class="home-btn d-none d-sm-block">
+        </div>
+        <div class="account-pages my-5 pt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-xl-5">
+                        <div>
+
+                            <div class="text-center authentication-logo mb-4">
+                                <a href="#" class="logo-dark">
+                                    <span><img src="{% static 'assets/images/icons/SAlogo.png' %}" alt="" height="90" width="90"></span>
+                                </a>
+                                <a href="#" class="logo-light">
+                                    <span><img src="{% static 'assets/images/icons/SAlogo.png' %}" alt="" height="90" width="90"></span>
+                                </a>
+                            </div>
+
+                            {% if messages %}
+                                {% for message in messages %}
+
+                                    {% if message.tags == 'warning'%}
+                                        <div class = "alert alert-danger">{{message}}</div>
+                                    {% else %}
+                                        <div class = "alert alert-{{ message.tags }}">{{message}}</div>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
+                            <form method="POST">
+                                {% csrf_token %}
+                                <div class="form-group mb-3">
+                                    <label for="emailaddress">Username</label>
+                                    <input class="form-control" type="text" name="username" required="" placeholder="Enter your email">
+                                </div>
+
+                                <a href="/password_reset" class="text-muted float-right">Forgot your password?</a>
+
+                                <div class="form-group mb-3">
+                                    <label for="password">Password</label>
+                                    <input class="form-control" type="password" required="" name="password" placeholder="Enter your password">
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="checkbox-signin" checked>
+                                        <label class="custom-control-label" for="checkbox-signin">Remember me</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group text-center mb-3">
+                                    <button class="btn btn-primary btn-lg width-lg btn-rounded" type="submit"> Sign In </button>
+                                </div>
+
+                            </form> 
+
+                        </div>
+                        <!-- end card -->
+
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <p class="text-muted">Don't have an account? <a href="register" class="text-dark ml-1">Sign Up</a></p>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end page -->
+    
+
+        <!-- Vendor js -->
+        <script src="{% static 'assets/js/vendor.min.js' %}"></script>
+
+        <!-- Bootstrap select plugin -->
+        <script src="{% static 'assets/libs/bootstrap-select/bootstrap-select.min.js' %}"></script>
+
+        <!-- App js -->
+        <script src="{% static 'assets/js/app.min.js' %}"></script>
+        
+    </body>
+
+</html>

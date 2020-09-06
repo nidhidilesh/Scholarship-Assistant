@@ -1,0 +1,36 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 20 Jan 2020 14:50:55 at https://coderthemes.com/codefox/layouts/horizontal/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://coderthemes.com/codefox/layouts/horizontal/index.html -O1 "C:\My Web Sites\Project1" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:56:39	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/assets/libs/datatables/fixedColumns.bootstrap4.min.css (from https://coderthemes.com/codefox/layouts/horizontal/tables-datatable.html)
+14:56:41	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/assets/libs/datatables/dataTables.fixedColumns.min.js (from https://coderthemes.com/codefox/layouts/horizontal/tables-datatable.html)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/page-recoverpw.html (from https://coderthemes.com/codefox/layouts/horizontal/pages-login.html)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/page-register.html (from https://coderthemes.com/codefox/layouts/horizontal/pages-login.html)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/page-login.html (from https://coderthemes.com/codefox/layouts/horizontal/pages-register.html)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/Trident/ (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/custombox/custombox.min.js)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/Edge/ (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/custombox/custombox.min.js)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/GET (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/custombox/custombox.min.js)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/edge/ (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/tooltipster/tooltipster.bundle.min.js)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/assets/libs/summernote/font/summernote.eot?1d9aeaaff0a8939558a45be6cd52cd4c (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/summernote/summernote-bs4.css)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/assets/libs/summernote/font/summernote.woff?1d9aeaaff0a8939558a45be6cd52cd4c (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/summernote/summernote-bs4.css)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/assets/libs/summernote/font/summernote.ttf?1d9aeaaff0a8939558a45be6cd52cd4c (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/summernote/summernote-bs4.css)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/blots/ (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/quill/quill.min.js)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/formats/ (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/quill/quill.min.js)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/assets/libs/fonts/dropify.eot (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/dropify/dropify.min.css)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/assets/libs/fonts/dropify.woff (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/dropify/dropify.min.css)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/assets/libs/fonts/dropify.ttf (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/dropify/dropify.min.css)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/assets/libs/fonts/dropify.svg (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/dropify/dropify.min.css)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/xl/worksheets/sheet1.xml (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/datatables/buttons.html5.min.js)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/xl/workbook.xml (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/datatables/buttons.html5.min.js)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/xl/styles.xml (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/datatables/buttons.html5.min.js)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/[Content_Types].xml (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/datatables/buttons.html5.min.js)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/buttons.pdf (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/datatables/buttons.html5.min.js)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/pdfmake/pdfmake.min.js)
+14:56:46	Error: 	"Not Found" (404) at link https://coderthemes.com/codefox/layouts/horizontal/HEAD (from https://coderthemes.com/codefox/layouts/horizontal/assets/libs/pdfmake/pdfmake.min.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 5 minutes 51 seconds : 625 links scanned, 599 files written (24476355 bytes overall) [9522030 bytes received at 27128 bytes/sec], 19330091 bytes transferred using HTTP compression in 486 files, ratio 21%, 31.2 requests per connection
+(25 errors, 0 warnings, 0 messages)

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+   <h4>Your first name is</h4>
+    {{ keyfname }}<br>
+    <h4>Your last name is</h4>
+    {{ keylname }}<br>
+    <h4>Your gender is</h4>
+    {{ keygender }}<br>
+    <h4>Your date of birth  is</h4>
+    {{ keydob }}<br>
+    <h4>Your address is</h4>
+    {{ keyaddress }}<br>
+    <h4>Your phone number is</h4>
+    {{ keyphone }}<br>
+    <h4>Your Enrollment Number is</h4>
+    {{ keyEnrollmentNumber }}<br>
+    <h4>Your SSC marks are</h4>
+    {{ keySSCmarks }}<br>
+    <h4>Your HSC marks are</h4>
+    {{ keyHSCmarks }}<br>
+    <h4>Your College name is</h4>
+    {{ keyCollege }}<br>
+    <h4>Your Board of Education  is</h4>
+    {{ keyBoard }}<br>
+     <h4>Your current Semester  is</h4>
+    {{ keySemester }}<br>
+     <h4>Your Department of Engineering  is</h4>
+    {{ keydept }}<br>
+    <h4>Your uploaded documents are:</h4>
+    <h6>Income Certificate</h6>{{ keyicert }}<br>
+    <h6>Caste Certificate</h6>{{ keyccert }}<br>
+    <h6>Passport Size Photo</h6>{{ keypp }}<br>
+
+    <input type="submit" value="Confirm" data-toggle="tooltip" data-placement="right" title="Click here to confirm the details!">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();});
+    </script>
+</body>
+</html>

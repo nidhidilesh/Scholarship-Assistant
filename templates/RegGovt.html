@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+
+
+   <center><h1>Fill out the scholarship form below:</h1></center>
+<br><br>
+
+    {% csrf_token %}
+
+    <fieldset style="border-color:0F7092;background-color: B8F1E0;">
+            <legend style="font-size:30px;font-family:serif;background-color:4A9EBD;">Personal Details:</legend><br>
+
+            <div class="form-group">
+            <label for="fname">First Name:</label>
+            <input class="form-control" type="text" size="30" name="fname" required placeholder="First name">
+            {{ keyfname }}<br>
+            </div>
+<br>
+            <div class="form-group">
+            <label for="lname">Last Name:</label >
+            <input class="form-control" type="text"  size="30" name="lname" required placeholder="Last name">
+            {{ keylname }}<br>
+            </div>
+<br>
+            <div class="form-group">
+                <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+            </div>
+            {{ keygender }}
+<br>
+            <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input class="form-control" type="date" id="dob" name="dob" required>
+            </div>
+            {{ keydob }}
+<br>
+            <div class="form-group">
+            <label for="address">Address</label>
+            <input class="form-control" type="textarea" name="address" placeholder="Enter your address">
+            </div>
+            {{ keyaddress }}
+
+<br>
+            <div class="form-group">
+            <label for="phone">Enter your phone number:</label>
+            <input type="number"id="phone" name="phone"  pattern="[1-9]{1}[0-9]{9}" maxlength="10" >
+            </div>
+            {{ keyphone }}
+<br>
+            <div class="form-group">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            </div>
+            {{ keyemail }}
+<br>
+        </fieldset>
+<br><br><br>
+        <fieldset style="background-color:B8F1E0; border-color: 0F7092;">
+            <legend style="background-color:4A9EBD; font-size:30px; font-family:serif">Academic Details:</legend>
+            <br>
+            <div class="form-group mb-5">
+                <label for="EnrollmentNumber">Enrolment number</label>
+                <input class="form-control" type="number" id="EnrolmentNumber" pattern="[0-9]{12}"  name="EnrolmentNumber" required placeholder="Enter your enrolment">            {{ keyEnrollmentNumber }}
+            </div>
+<br>
+
+            <div class="form-group mb-3">
+                <label for="SSCmarks">SSC MArks</label>
+                <input class="form-control" type="number" id="SSCmarks" name="SSCmarks" min="0" max="100"  required placeholder="Enter your ssc marks">
+                            {{ keySSCmarks }}
+            </div>
+<br>
+
+
+            <div class="form-group mb-3">
+                <label for="HSCmarks">HSC Marks</label>
+                <input class="form-control" type="number" id="HSCmarks" name="HSCmarks" placeholder="Enter your marks"  min="0" max="100" required>
+            {{ keyHSCmarks }}
+            </div>
+<br>
+
+
+            <div class="form-group mb-4">
+                <label for="CollegeName">College Name</label>
+                <input class="form-control" type="text" name="CollegeName" id="CollegeName" placeholder="Enter your CollegeName" required>
+            {{ keyCollegeName }}
+            </div>
+<br>
+
+            <div class="form-group mb-3">
+                <label for="Board">Board of Education</label>
+                <input class="form-control" type="text" id="Board" name="Board" placeholder="Enter your Board Of Education" required>
+            {{ keyBoard }}
+            </div>
+<br>
+
+
+            <div class="form-group mb-3">
+                <label for="Semester">Semester</label>
+                <input list="Semester"class="form-control" name="Semester" placeholder="Enter your Semester"  min="0" max="8" required>
+            <datalist id="Semester">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+            </datalist>
+                {{ keySemester }}
+            </div>
+
+<br>
+
+            <div class="form-group">
+            <label for="dept">Department</label>
+            <input list="dept" name="dept" required>
+            <datalist id="dept" >
+                <option value="Applied Mechanics"></option>
+                <option value="Automobile Engineering"></option>
+                <option value="Biomedical Engineering"></option>
+                <option value="Chemical Engineering"></option>
+                <option value="Civil Engineering"></option>
+                <option value="Computer Engineering"></option>
+                <option value="Plastic Technology"></option>
+                <option value="Electrical Engineering"></option>
+                <option value="Electronics and Communication Engineering"></option>
+                <option value="Environment Engineering"></option>
+                <option value="Information and Technology"></option>
+                <option value="Instrumentation and Control Engineering"></option>
+                <option value="Mechanical Engineering"></option>
+                <option value="Rubber Engineering"></option>
+                <option value="Textile Engineering"></option>
+            </datalist>
+                {{ keydept }}
+            </div>
+<br>
+        </fieldset>
+<br><br><br>
+        <fieldset style="background-color: B8F1E0 ; border-color: 0F7092;">
+            <legend style="background-color: 4A9EBD; font-size: 30px;">Documents Upload</legend>
+            <div class="form-group">
+            <label for="icerti">Upload Income Certificate:</label>
+            <input type="file" name="icerti" required="method">
+                {{ keyicerti }}
+<br>
+            <label for="ccerti">Upload Caste Certificate:</label>
+            <input type="file" id="ccerti" name="ccerti" required="method">
+                {{ keyccerti }}
+<br>
+            <label for="pp">Upload Passport size photo</label>
+            <input type="file" id="pp" name="pp" required="method">
+                {{ keypp }}
+            </div>
+<br>
+        </fieldset>
+<br><br><br>
+        <input type="submit" value="Register"  data-toggle="tooltip" data-placement="right" title="Click here to register!">
+<br><br><br
+
+    </form>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();});
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <meta charset="utf-8" />
+    <title>Scholarship Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+        <link rel="shortcut icon" href="">
+
+        <!-- Bootstrap select pluings -->
+        <link href="{% static 'assets/libs/bootstrap-select/bootstrap-select.min.css' %}" rel="stylesheet" type="text/css" />
+
+        <!-- c3 plugin css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/libs/c3/c3.min.css' %}">
+
+        <!-- App css -->
+        <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+        <link href="{% static 'assets/css/icons.min.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/css/app.min.css' %}" rel="stylesheet" type="text/css"  id="app-stylesheet" />
+	<style>
+		body
+		{
+		background-color: white;
+		}
+		
+		h1
+		{
+		color: white;
+		background-color:cornflowerblue;
+		}
+        
+	</style>
+</head>
+<body>
+	
+    <h1><center>Statistics of Scholarship Assistant</center><br></h1>
+	<center><a href="/admin/dashboard"><img src="{% static 'assets/images/icons/SAlogo.png' %}" alt="Scholarship Assistant Logo" height="100" width="100"></a>
+	
+    <!--<center>Amount of scholarship given: {{total_amount}}</center><br>
+    <center>Number of scholarships approved: {{approved_sch_num}} </center><br>
+    <center>Number of students applied: {{applied_sch_num}}</center><br>
+    <center>Number of students passes: </center><br>
+    <center>Number of students registered: {{reg_users}}</center><br>-->
+    
+	<div class="row"><!-- Start new row-->
+		<div class="col-xl-3 col-md-6">
+            <div class="card widget-box-two bg-purple">
+                <div class="card-body">
+                    <div class="media">
+                        <div class="media-body wigdet-two-content">
+                            <p class="m-0 text-uppercase text-white" title="Statistics">Total amount of scholarship given till date:</p>
+                            <h2 class="text-white"><span data-plugin="counterup">{{total_amount}}</span> <i class="mdi mdi-arrow-up text-white font-22"></i></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end col -->
+
+        <div class="col-xl-3 col-md-6">
+            <div class="card widget-box-two bg-info">
+                <div class="card-body">
+                        <div class="media">
+                            <div class="media-body wigdet-two-content">
+                                <p class="m-0 text-white text-uppercase" >Total number of scholarships approved:</p>
+                                <h2 class="text-white"><span data-plugin="counterup">{{approved_sch_num}}</span> <i class="mdi mdi-arrow-up text-white font-22"></i></h2>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div><!-- end col -->
+        
+        <div class="col-xl-3 col-md-6">
+            <div class="card widget-box-two bg-pink">
+                <div class="card-body">
+                    <div class="media">
+                        <div class="media-body wigdet-two-content">
+							<p class="m-0 text-uppercase text-white" >Total number of students who applied for scholarships:</p>
+                            <h2 class="text-white"><span data-plugin="counterup">{{applied_sch_num}}</span> <i class="mdi mdi-arrow-up text-white font-22"></i></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end row -->
+    <div class="row"><!-- Start new row-->
+		<div class="col-xl-3 col-md-6">
+            <div class="card widget-box-two bg-pink">
+                <div class="card-body">
+                    <div class="media">
+                        <div class="media-body wigdet-two-content">
+                            <p class="m-0 text-uppercase text-white">Total number of students who received scholarships:</p>
+                            <h2 class="text-white"><span data-plugin="counterup">{{num}}</span> <i class="mdi mdi-arrow-up text-white font-22"></i></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end col -->
+		<div class="col-xl-3 col-md-6">
+            <div class="card widget-box-two bg-success">
+                <div class="card-body">
+                    <div class="media">
+                        <div class="media-body wigdet-two-content">
+							<p class="m-0 text-white text-uppercase" >Total number of students registered:</p>
+                            <h2 class="text-white"><span data-plugin="counterup">{{reg_users}}</span> <i class="mdi mdi-arrow-up text-white font-22"></i></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end col -->
+		<div class="col-xl-3 col-md-6">
+            <div class="card widget-box-two bg-purple">
+                <div class="card-body">
+                    <div class="media">
+                        <div class="media-body wigdet-two-content">
+							<p class="m-0 text-white text-uppercase" >Total number of colleges involved</p>
+                            <h2 class="text-white"><span data-plugin="counterup">1</span> <i class="mdi mdi-arrow-up text-white font-22"></i></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end col -->
+    </div><!-- end row -->
+
+                     
+</body>
+</html>
